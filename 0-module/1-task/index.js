@@ -1,3 +1,4 @@
-function sum(m, n) {
-  // ваш код...
-}
+const sum = ((m,n) =>{
+    let c = m + n
+    return c 
+})
