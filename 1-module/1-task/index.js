@@ -9,7 +9,7 @@ function factorial(number) {
   if (number === 0 || number === 1) {
       return 1;
   }
-
+  // после 170 функция выдает бесконечность
   if (number > 170) {
       return Infinity
   }
