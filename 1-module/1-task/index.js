@@ -15,15 +15,17 @@ function factorial(number) {
   }
 
   let factorialChain = [];
-  let result;
+  let numberTwo;
 
-  for(let j = 1; j <= number; j++){
+  for(let j = number-1; j > 0; j--) {
     factorialChain.push(j);
   }
 
-  result = factorialChain.reduce((multiplication, element) => {
+  numberTwo = factorialChain.reduce((multiplication, element) => {
     return multiplication * element;
   })
+
+  result = number * numberTwo;
 
   return result;
 }
