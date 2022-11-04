@@ -3,9 +3,5 @@ const checkSpam = ((str) => {
   let spamTwo = "XXX".toLocaleLowerCase();
   let smallStr = str.toLocaleLowerCase();
 
-  if  (smallStr.includes(spamOne) || smallStr.includes(spamTwo))  {
-    return true;
-  }  else  {
-    return false;
-  }
+  return(smallStr.includes(spamOne) || smallStr.includes(spamTwo));
 })
