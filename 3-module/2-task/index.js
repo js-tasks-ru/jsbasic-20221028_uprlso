@@ -1,11 +1,12 @@
-function filterRange(arr, a, b) {
-  let newArr = [];
+function filterRange(arr, a, b)  {
+  let result = [];
 
-  arr.forEach(element =>  {
-    if (element >= a && element < b)  {
-    newArr.push(element);
-    }
-  });
-
-  return newArr;
+  let searchNum = arr.filter(number => {
+    if (number >= a
+        && number < b
+       )  {
+        result.push(number);
+      }
+  })
+  return result;
 }
