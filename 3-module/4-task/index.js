@@ -1,10 +1,10 @@
 function showSalary(users, age) {
   let copyUser = JSON.parse(JSON.stringify(users));
-  let foundedUsers = [];
+  let foundUsers = [];
   let result = [];
   copyUser.filter(item =>  {
     if (item["age"] <= age)  {
-      foundedUsers.push(item);
+      foundUsers.push(item);
     }
   })
   foundUsers.forEach((element) => {
