@@ -7,9 +7,9 @@ let camelize = (str =>  {
                   camelCase.push(element);
                  }  else  {
                   camelCase.push(element.charAt(0).toUpperCase() + element.slice(1));
-                }
-                return camelCase
+                 }
+                 return camelCase;
                })
-               .join("")
-  return result
+               .join("");
+  return result;
 })
