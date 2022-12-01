@@ -1,10 +1,12 @@
 function initCarousel() {
-  let caruselInner = document.querySelector(".carousel__inner")
-  let arrowRight = document.querySelector(".carousel__arrow_right")
-  let arrowLeft = document.querySelector(".carousel__arrow_left")
-  let position =  0
-  let slideSize = caruselInner.offsetWidth
-  arrowLeft.style.display = "none"
+  let caruselInner = document.querySelector(".carousel__inner");
+  let arrowRight = document.querySelector(".carousel__arrow_right");
+  let arrowLeft = document.querySelector(".carousel__arrow_left");
+  let slidesLen = 4;
+  let position =  0;
+  let slideSize = caruselInner.offsetWidth;
+  arrowLeft.style.display = "none";
+
   
   let rightButton = (() => {
     position++;
@@ -24,7 +26,7 @@ function initCarousel() {
   };
 
   const hidOrUnhid = (position) => {
-    if (position >= 3) {
+    if (position >= (slidesLen-1)) {
       arrowRight.style.display = "none";
     }  else {
       arrowRight.style.display = "";
